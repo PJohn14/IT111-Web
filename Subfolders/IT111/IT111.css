@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "futura md bt";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: #fff;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #fff;
+}
+
+
+/*====================================================*/
+/*LANDING PAGE*/
+.landingpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/landingpage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding: 50px;
+}
+.lpcontainer {
+    padding: 20px;
+    height: contain;
+    width: auto;
+    background-color: rgba(4, 1, 12, 0.83);
+    border: 1px #fff solid;
+    display: grid;
+    grid-template-rows: (3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top h2 {
+    color: #fff;
+    letter-spacing: 27px;
+    font-weight: 100;
+}
+
+.LearnMore-button {
+    padding: 10px 20px;
+    background-color: #13072e;
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+}
+/*====================================================*/
+.bodycontent {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 50px;
+    color: #230C4A;
+}
+
+.headerpart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 100px;
+}
+
+.headerpart h2 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 4.5px;
+    text-align: center;
+}
+
+.headerpart h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.headerpart p {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*==================================================*/
+
+.lessoncontainer,
+.lessoncontainer2 {
+    display: flex;
+    padding: 50px;
+}
+
+.photo img {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center; 
+    border: 2px #230C4A solid;
+}
+
+.textdescription1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 25px;
+}
+.textdescription h2 {
+    letter-spacing: 4.5px; 
+}
+.lessontitle {
+    font-weight: 100;
+}
+.description {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: auto;
+    background: #230C4A;
+    color: white;
+    padding: 20px;
+}
+
+.textdescription2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-right: 25px;
+}
+/*==================================================*/
+
+.highlightlesson {
+    background: url(images/Highlights.png)  no-repeat center center / cover;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.highlightcontainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(4, 1, 12, 0.95);
+    color: #fff;
+    border: 1px white solid;
+    
+}
+.highlightlessoncontents {
+    margin-top: 20px;
+}
+.highlightlessoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.photo1 img {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border: 1px white solid;
+}
+.highlighttitle h2 {
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 31px;
+}
+.description2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #230C4A;
+    color: white;
+    padding: 25px;
+    margin-left: 25px;
+}
+.textdescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*==================================================*/
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    color: white;
+    gap: 2rem;
+    padding: 20px 0;
+}
+
+.socmed {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.icons img {
+    height: 50px;
+    width: 50px;
+}
+
+/*================================================*/
+
+/*Responsive of Website*/
+@media only screen and (max-width: 1240px) {
+    .photo img {
+    height: 250px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+    
+    /*==========LANDING PAGE=============*/
+    .top h2 {
+    letter-spacing: 20px;
+    }
+    
+    .headerpart p {
+    font-size: 20px;
+    font-weight: 300;
+    }
+    
+    .lpcontainer .center img {
+        width: 600px;
+    }
+    
+    .photo img {
+    height: 300px;
+    width: 300px;
+    }
+    
+    .lessoncontainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    } 
+    
+    .lessoncontainer2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .textdescription1,
+    .textdescription2 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .photo1 img {
+    height: 300px;
+    width: 300px;
+    }
+    .highlightlessoncontents {
+    margin-top: 0px;
+}
+    .highlightlessoncontainer {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    }
+    
+    .description2 {
+    margin: 0;
+    }
+    .highlighttitle h2 {
+    font-size: 25px;
+    letter-spacing: 20px;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #04040c;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li {
+        text-align: center;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+    
+    /*==========LANDING PAGE=============*/
+    .top h2 {
+    font-size: 15px;
+    letter-spacing: 15px;
+    }
+    .headerpart br {
+        display: none;
+    }
+    .headerpart p {
+    font-size: 15px;
+}
+    .lpcontainer .center img {
+        width: 500px;
+    }   
+    .LearnMore-button {
+    padding: 10px 20px;
+    background-color: #13072e;
+    font-weight: 200;
+    font-size: 25px;;
+    color: white;
+    }
+    
+    .highlighttitle h2 {
+    font-size: 20px;
+    letter-spacing: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    /*==========LANDING PAGE=============*/
+    .top h2 {
+    font-size: 12px;
+    letter-spacing: 10px;
+    }
+    .lpcontainer .center img {
+        width: 300px;
+    }
+    
+    .highlighttitle h2 {
+    font-size: 20px;
+    letter-spacing: 10px;
+    }
+    
+    .highlightlessoncontainer h2 {
+    font-size: 15px;
+    }
+    .highlightlessoncontainer {
+    padding-top: 10px;
+    }
+    .highlightcontainer {
+    padding-top: 10px;
+    }
+    .photo1 img {
+    height: 200px;
+    width: 200px;
+    }
+}    
+@media only screen and (max-width: 500px) {
+    /*==========LANDING PAGE=============*/
+    .top h2 {
+    font-size: 12px;
+    letter-spacing: 7px;
+    }
+    .lpcontainer .center img {
+        width: 250px;
+    }
+     .LearnMore-button {
+    padding: 5px 10px;
+    background-color: #13072e;
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    }
+    
+    /*==========CONTENTS=============*/
+     .lessontitle {
+        font-size: 18px;
+    }
+}    
+
+@media only screen and (max-width: 360px) {
+    /*==========LANDING PAGE=============*/
+    .top h2 {
+    font-size: 12px;
+    letter-spacing: 6px;
+    }
+    .lpcontainer .center img {
+        width: 200px;
+    }
+    .LearnMore-button {
+    padding: 5px 10px;
+    background-color: #13072e;
+    font-weight: 200;
+    font-size: 15px;
+    color: white;
+    }
+    
+    /*==========CONTENTS=============*/
+   
+}

@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background: #000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-family: 'Poppins', sans-serif;
+}
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s; 
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: #fff;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #fff;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+/*LANDING PAGE*/
+.landing-page {
+    background-image: url(images/Home-files/LandingPage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Text {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 4rem;
+    margin-left: 50px;  
+}
+.Text .tit {
+    height: auto;
+    width: auto;
+}
+.Text img, .Text a {
+    display: block;
+}
+
+.Text button {
+    padding: 10px 15px;
+    font-size: 25px;
+    background-color: rgb(28, 10, 148);
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.Text button:hover {
+    background-color:  #5d5dbd;
+}
+
+.Text button:active {
+    background-color: #04040c;
+}
+.picture {
+    display: flex;
+    align-items: end;
+}
+.portrait {
+    height: 100%;
+    width: 600px;
+    align-items: end;    
+}
+
+.socmed {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.icons img {
+    height: 50px;
+    width: 50px;
+}
+
+.icons .fb:hover {
+    color: blue;
+}
+
+/*Introduction*/
+.introductory-statement {
+    height: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #13072f;
+    color: white;
+}
+.statement {
+    font-size: 25px;
+}
+
+/*About Me*/
+.about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aboutmetext-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #230C4a;
+    gap: 3rem;
+    margin-left: 50px;
+}
+.factscontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #240c4a;
+    color: white;
+}
+.aboutmepicture{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutmepicture img{
+    height: 400px;
+    width: 400px;
+}
+.title-page1 {
+    display: none;
+}
+.title-page2, 
+.welcomestatement, 
+.name, 
+.aboutmedescription, 
+.factstitle, 
+.factsdescription {
+    display: block;
+}
+
+.title-page2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.welcomestatement {
+    font-size: 25px;
+}
+.name {
+    font-size: 45px;
+    font-weight: 700;
+}
+.aboutmedescription {
+    font-size: 25px;
+    font-weight: 100;
+}
+/*Qoute*/
+.qoute {
+    height: auto;
+    width: 100%;
+    padding: 20px;;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #13072f;
+    color: white;
+}
+ .qoute span {
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 25px;
+    }
+
+/*Education*/
+.education {
+    background-image: url(images/Home-files/EducationBackground.png);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+.educationtitle {
+    margin-top: 25px;
+    text-align: center;
+}
+.educationcontainers {
+    display: flex;
+    height: calc(100% - 100px);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.educationni {
+    color: #220c4a;
+    font-size: 50px;
+    font-weight: 700;
+}
+.educationname {
+    font-size: 25px;
+}
+.edcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+    background-image: linear-gradient(to bottom right, #240c4a, #3e2080);
+    color: white;
+    overflow-x: hidden;
+    border-radius: 25px;
+}
+.edconback {
+    display: none;
+}
+
+.edconfront:hover {
+    display: none;
+}
+.edconfront:hover + .edconback {
+    display: block;
+}
+.edconback img {
+    padding: 10px;
+    height: 195px;
+    width: 250px;
+}
+.eddescription {
+    text-align: center;
+}
+
+/*Hobbies and Skills*/
+.HobbiesSkills {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    color: white;
+}
+.hobskiltitle {
+    text-align: center;
+    font-size: 25px;
+}
+.Hobbiescontainer {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #240c4a;
+    padding: 20px;
+    border: black 1px solid;
+}
+.hobbycontent {
+    gap: 3rem;
+    width: 100%;
+    border: 1px solid white;
+    padding: 30px 100px;
+    background-image: linear-gradient(to bottom right, #240c4a, #3e2080);
+}
+.hobbycontent ul li {
+    border: 1px solid white;
+    font-size: 25px;
+    padding: 20px;
+    gap: 3rem;
+    background-color: #3e2080;
+}
+.hobbycontent ul li:hover {
+    background-color: #13082f;
+}
+.Skillcontainer {
+    height: 100%;
+    width: 100%;
+    background-color: #230C4a;
+    padding: 20px;
+}
+.skillcontent {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+.skill {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.skill1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    /*box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);*/
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+    font-weight: 600;
+    color: black;
+}
+
+.skill1 svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim1 2s linear forwards;
+}
+.skill2 svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+}
+.skill3 svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+}
+.skill4 svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim4 2s linear forwards;
+}
+.skill5 svg circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim5 2s linear forwards;
+}
+
+
+.skill svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skillname {
+    text-align: center;
+}
+
+/*Question and Answer*/
+
+.infographics {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e2080;
+    width: 100%;
+    color: white;
+}
+.QAtitle {
+    text-align: center;
+    font-size: 50px;
+}
+
+.video {
+    margin-top:50px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    color: white;
+}
+
+.Question {
+    font-size: 20px;
+    font-weight: 700;
+}
+.Qdescription {
+    font-size: 20px;
+    font-weight: 300;
+}
+.Avideo iframe {
+    width: 100%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Responsive of Website*/
+@media only screen and (max-width: 1240px) {
+    .hero {
+        flex-direction: column;
+        padding: auto;
+    }
+    .picture {
+        display: none;
+    }
+    .Text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .Text .tit {
+        height: fit-content;
+        width: fit-content;
+    }
+    .landing-page {
+        height: 100svh;
+    }
+    .Avideo iframe {
+        width: 700px;
+        height: 394px;
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+
+    /*ABOUT ME*/
+    .about-me {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    .title-page1 {
+        padding: 50px;
+        display: block;
+    }
+    .title-page2{
+        display: none;
+    }
+    .factscontainer {
+        width: auto;
+    }
+    .aboutmepicture img{
+        height: auto;
+        width: auto;
+    }
+    .aboutmetext-container {
+        margin-left: 0;
+    }
+
+    /*Qoute*/
+    .qoute{
+        margin-top: 20px;
+    }
+    .qoute span {
+        font-size: 15px;
+        letter-spacing: 15px;
+    }
+   
+    /*Education*/
+    .education {
+        height: fit-content;
+    }
+    .educationcontainers {
+        flex-direction: column;
+        height: 100%;
+    }
+    .edcontainer {
+    }
+    .Avideo iframe {
+        width: 500px;
+        height: 281px;
+    }
+}
+    
+@keyframes anim1 {
+    100%{
+        stroke-dashoffset: 165.2;
+    }
+}
+@keyframes anim2 {
+    100%{
+        stroke-dashoffset: 118;
+        }
+}
+@keyframes anim3 {
+    100%{
+        stroke-dashoffset: 283.2;
+    }
+}
+@keyframes anim4 {
+     100%{
+        stroke-dashoffset: 94.4;
+    }
+}
+@keyframes anim5 {
+        100%{
+            stroke-dashoffset: 94.4  ;
+        }
+    }
+
+    
+
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #04040c;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li {
+        text-align: center;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+    .Text {
+        gap: 3rem;
+    }
+    .Text .tit {
+        margin-top: 50px;
+        height: 80%;
+        width: 80%;
+    }
+    .Text button {
+        font-size: 20px;
+    }
+    .icons img {
+        height: 40px;
+        width: 40px;
+    }
+    /*Hobbies and Skills*/
+    .HobbiesSkills {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .skillcontent {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    
+    
+    .Avideo iframe {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media only screen and (360px <= width <= 700px) {
+    .Avideo iframe {
+        width: 300px;
+        height: 168px;
+    }
+}
