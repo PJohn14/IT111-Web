@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "futura md bt";
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -19,6 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    font-family: 'Poppins', sans-serif;
 }
 header .logo {
     font-size: 30px;
@@ -52,6 +52,9 @@ header nav ul li a.active {
     background: #fff;
 }
 
+main{
+    font-family: 'Roboto', sans-serif;
+}
 
 /*====================================================*/
 /*LANDING PAGE*/
